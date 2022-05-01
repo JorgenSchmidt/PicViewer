@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PicViewer"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        WindowStartupLocation="CenterScreen"
+        Title="Picture Viewer v.0.0.0.0" Height="835" Width="1415" ResizeMode="NoResize">
+    <Window.DataContext>
+        <local:MainWindowViewModel/>
+    </Window.DataContext>
     <Grid>
-
+        <Label Content="Информационная панель:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1033,10,0,0" Width="351"/>
+        <TextBox x:Name="InformationPanel" IsReadOnly="True" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="351" Margin="1033,41,0,0" Text="{Binding InfoPanel}"/>
+        <Label Content="Директория из которой надо скопировать файлы:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1033,93,0,0" Height="32" Width="351"/>
+        <TextBox x:Name="CopyFrom" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="351" Margin="1033,125,0,0" Text="{Binding CopyFromPanel}"/>
+        <Button x:Name="OpenFolder" Content="Открыть папку" HorizontalAlignment="Left" VerticalAlignment="Top" Width="102" Margin="1033,167,0,0" Height="45" />
+        <Label Content="Директория в которую необходимо скопировать файлы:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1033,248,0,0" Height="31" Width="351"/>
+        <TextBox x:Name="CopyTo" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="351" Margin="1033,284,0,0" Text="{Binding CopyToPanel}"/>
+        <Button x:Name="ToLastFile" Content="&lt;&lt;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="86" Margin="377,634,0,0" Height="83" />
+        <Button x:Name="CopySelectedFile" Content="Copy" HorizontalAlignment="Left" VerticalAlignment="Top" Width="86" Margin="468,634,0,0" Height="83" />
+        <Button x:Name="ToNextFile" Content=">>" HorizontalAlignment="Left" VerticalAlignment="Top" Width="86" Margin="559,634,0,0" Height="83" />
+        <Button x:Name="Delete" Content="Del" HorizontalAlignment="Left" VerticalAlignment="Top" Width="86" Margin="650,634,0,0" Height="83" />
+        <MediaElement x:Name="ContentWindow" HorizontalAlignment="Left" Height="607" VerticalAlignment="Top" Width="1028"/>
+        <Label Name="ElementCounter" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="741,663,0,0"/>
     </Grid>
 </Window>

@@ -1,5 +1,5 @@
 ﻿PicViewer
-1.0.0.0
+
 
 winexe
 C#
@@ -12,7 +12,7 @@ TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 D:\ProgramData\Projects\PicViewer\PicViewer\App.xaml
 11407045341
 
-9-1429211056
+6-1216197424
 193-1891726104
 MainWindow.xaml;
 
