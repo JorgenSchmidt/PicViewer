@@ -1,0 +1,12 @@
+D:\ProgramData\Projects\PicViewer\PicViewer.AlgLib\bin\Debug\net5.0\PicViewer.AlgLib.deps.json
+D:\ProgramData\Projects\PicViewer\PicViewer.AlgLib\bin\Debug\net5.0\PicViewer.AlgLib.dll
+D:\ProgramData\Projects\PicViewer\PicViewer.AlgLib\bin\Debug\net5.0\ref\PicViewer.AlgLib.dll
+D:\ProgramData\Projects\PicViewer\PicViewer.AlgLib\bin\Debug\net5.0\PicViewer.AlgLib.pdb
+D:\ProgramData\Projects\PicViewer\PicViewer.AlgLib\obj\Debug\net5.0\PicViewer.AlgLib.csproj.AssemblyReference.cache
+D:\ProgramData\Projects\PicViewer\PicViewer.AlgLib\obj\Debug\net5.0\PicViewer.AlgLib.GeneratedMSBuildEditorConfig.editorconfig
+D:\ProgramData\Projects\PicViewer\PicViewer.AlgLib\obj\Debug\net5.0\PicViewer.AlgLib.AssemblyInfoInputs.cache
+D:\ProgramData\Projects\PicViewer\PicViewer.AlgLib\obj\Debug\net5.0\PicViewer.AlgLib.AssemblyInfo.cs
+D:\ProgramData\Projects\PicViewer\PicViewer.AlgLib\obj\Debug\net5.0\PicViewer.AlgLib.csproj.CoreCompileInputs.cache
+D:\ProgramData\Projects\PicViewer\PicViewer.AlgLib\obj\Debug\net5.0\PicViewer.AlgLib.dll
+D:\ProgramData\Projects\PicViewer\PicViewer.AlgLib\obj\Debug\net5.0\ref\PicViewer.AlgLib.dll
+D:\ProgramData\Projects\PicViewer\PicViewer.AlgLib\obj\Debug\net5.0\PicViewer.AlgLib.pdb

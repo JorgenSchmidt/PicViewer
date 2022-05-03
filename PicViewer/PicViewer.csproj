@@ -7,4 +7,9 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PicViewer.AlgLib\PicViewer.AlgLib.csproj" />
+    <ProjectReference Include="..\PicViewer.Core\PicViewer.Core.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -21,3 +21,8 @@ D:\ProgramData\Projects\PicViewer\PicViewer\obj\Debug\net5.0-windows\ref\PicView
 D:\ProgramData\Projects\PicViewer\PicViewer\obj\Debug\net5.0-windows\PicViewer.pdb
 D:\ProgramData\Projects\PicViewer\PicViewer\obj\Debug\net5.0-windows\PicViewer.genruntimeconfig.cache
 D:\ProgramData\Projects\PicViewer\PicViewer\obj\Debug\net5.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\ProgramData\Projects\PicViewer\PicViewer\bin\Debug\net5.0-windows\PicViewer.AlgLib.dll
+D:\ProgramData\Projects\PicViewer\PicViewer\bin\Debug\net5.0-windows\PicViewer.Core.dll
+D:\ProgramData\Projects\PicViewer\PicViewer\bin\Debug\net5.0-windows\PicViewer.AlgLib.pdb
+D:\ProgramData\Projects\PicViewer\PicViewer\bin\Debug\net5.0-windows\PicViewer.Core.pdb
+D:\ProgramData\Projects\PicViewer\PicViewer\obj\Debug\net5.0-windows\PicViewer.csproj.CopyComplete

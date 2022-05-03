@@ -1,11 +1,46 @@
 {
   "version": 3,
   "targets": {
-    "net5.0-windows7.0": {}
+    "net5.0-windows7.0": {
+      "PicViewer.AlgLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/PicViewer.AlgLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PicViewer.AlgLib.dll": {}
+        }
+      },
+      "PicViewer.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/PicViewer.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PicViewer.Core.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "PicViewer.AlgLib/1.0.0": {
+      "type": "project",
+      "path": "../PicViewer.AlgLib/PicViewer.AlgLib.csproj",
+      "msbuildProject": "../PicViewer.AlgLib/PicViewer.AlgLib.csproj"
+    },
+    "PicViewer.Core/1.0.0": {
+      "type": "project",
+      "path": "../PicViewer.Core/PicViewer.Core.csproj",
+      "msbuildProject": "../PicViewer.Core/PicViewer.Core.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0-windows7.0": []
+    "net5.0-windows7.0": [
+      "PicViewer.AlgLib >= 1.0.0",
+      "PicViewer.Core >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Joe\\.nuget\\packages\\": {}
@@ -33,7 +68,14 @@
       "frameworks": {
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\ProgramData\\Projects\\PicViewer\\PicViewer.AlgLib\\PicViewer.AlgLib.csproj": {
+              "projectPath": "D:\\ProgramData\\Projects\\PicViewer\\PicViewer.AlgLib\\PicViewer.AlgLib.csproj"
+            },
+            "D:\\ProgramData\\Projects\\PicViewer\\PicViewer.Core\\PicViewer.Core.csproj": {
+              "projectPath": "D:\\ProgramData\\Projects\\PicViewer\\PicViewer.Core\\PicViewer.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

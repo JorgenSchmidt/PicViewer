@@ -1,4 +1,7 @@
-﻿using PicViewer.Services;
+﻿using PicViewer.Core;
+using PicViewer.Models;
+using PicViewer.Services;
+using System;
 
 namespace PicViewer
 {
@@ -45,7 +48,8 @@ namespace PicViewer
         #endregion
 
         #region rule buttons of main window
-        public Command ClickToNextFile
+
+        public Command OpenDirectory
         {
             get
             {
@@ -53,7 +57,13 @@ namespace PicViewer
                 (
                     (obj) =>
                     {
-
+                        AppState appobj = DirectoryDataModel.OpenFolder(CopyFromPanel);
+                        InfoPanel = appobj.InformationPanelState;
+                        if (appobj.OperationStatus == 1)
+                        {
+                            ElementCounter = appobj.ElementCounterState;
+                            WindowContent = appobj.ContentWindowState;
+                        }
                     }
                 );
             }
@@ -67,13 +77,19 @@ namespace PicViewer
                 (
                     (obj) =>
                     {
-
+                        AppState appobj = DirectoryDataModel.ToLastFile();
+                        InfoPanel = appobj.InformationPanelState;
+                        if (appobj.OperationStatus == 1)
+                        {
+                            ElementCounter = appobj.ElementCounterState;
+                            WindowContent = appobj.ContentWindowState;
+                        }
                     }
                 );
             }
         }
 
-        public Command OpenDirectory
+        public Command ClickToNextFile
         {
             get
             {
@@ -81,7 +97,13 @@ namespace PicViewer
                 (
                     (obj) =>
                     {
-
+                        AppState appobj = DirectoryDataModel.ToNextFile();
+                        InfoPanel = appobj.InformationPanelState;
+                        if (appobj.OperationStatus == 1)
+                        {
+                            ElementCounter = appobj.ElementCounterState;
+                            WindowContent = appobj.ContentWindowState;
+                        }
                     }
                 );
             }
@@ -114,6 +136,34 @@ namespace PicViewer
                 );
             }
         }
+        #endregion
+
+        #region for other elements of main window
+
+        public string elementCounter = "0/0";
+
+        public string ElementCounter
+        {
+            get { return elementCounter;}
+            set 
+            { 
+                elementCounter = value;  
+                CheckChanges(); 
+            }
+        }
+
+        public Uri windowContent;
+
+        public Uri WindowContent
+        {
+            get { return windowContent; }
+            set 
+            { 
+                windowContent = value;
+                CheckChanges();
+            }
+        }
+
         #endregion
     }
 }

@@ -7,14 +7,38 @@
   "targets": {
     ".NETCoreApp,Version=v5.0": {
       "PicViewer/1.0.0": {
+        "dependencies": {
+          "PicViewer.AlgLib": "1.0.0",
+          "PicViewer.Core": "1.0.0"
+        },
         "runtime": {
           "PicViewer.dll": {}
+        }
+      },
+      "PicViewer.AlgLib/1.0.0": {
+        "runtime": {
+          "PicViewer.AlgLib.dll": {}
+        }
+      },
+      "PicViewer.Core/1.0.0": {
+        "runtime": {
+          "PicViewer.Core.dll": {}
         }
       }
     }
   },
   "libraries": {
     "PicViewer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PicViewer.AlgLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PicViewer.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

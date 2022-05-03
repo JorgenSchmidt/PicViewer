@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PicViewer", "PicViewer.cspr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PicViewer.AlgLib", "..\PicViewer.AlgLib\PicViewer.AlgLib.csproj", "{1F902F05-B390-416A-ADBB-7580DBC45C27}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PicViewer.Core", "..\PicViewer.Core\PicViewer.Core.csproj", "{2751C697-625F-4237-ABCC-CC2E4BD9F779}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1F902F05-B390-416A-ADBB-7580DBC45C27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F902F05-B390-416A-ADBB-7580DBC45C27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F902F05-B390-416A-ADBB-7580DBC45C27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2751C697-625F-4237-ABCC-CC2E4BD9F779}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2751C697-625F-4237-ABCC-CC2E4BD9F779}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2751C697-625F-4237-ABCC-CC2E4BD9F779}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2751C697-625F-4237-ABCC-CC2E4BD9F779}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "c196f690-bc1f-4ac7-a04d-eb072f0f94fb": {
+      "ProjectGuid": "c196f690-bc1f-4ac7-a04d-eb072f0f94fb",
+      "DisplayName": "PicViewer",
+      "ColorIndex": 0
+    },
+    "1f902f05-b390-416a-adbb-7580dbc45c27": {
+      "ProjectGuid": "1f902f05-b390-416a-adbb-7580dbc45c27",
+      "DisplayName": "PicViewer.AlgLib",
+      "ColorIndex": 1
+    },
+    "2751c697-625f-4237-abcc-cc2e4bd9f779": {
+      "ProjectGuid": "2751c697-625f-4237-abcc-cc2e4bd9f779",
+      "DisplayName": "PicViewer.Core",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
