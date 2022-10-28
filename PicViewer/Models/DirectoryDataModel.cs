@@ -122,5 +122,38 @@ namespace PicViewer.Models
                 };
             }
         }
+
+        public static AppState ToCopyFile (string copyfrompanel, string copytopanel)
+        {
+            if (Directory.Exists(copyfrompanel) && Directory.Exists(copytopanel))
+            {
+                if (FileList.Count == 0)
+                {
+                    return new AppState
+                    {
+                        OperationStatus = 0,
+                        InformationPanelState = "Директория, из которой предполагается копирование, не имеет файлов изображения."
+                    };
+                }
+                else
+                {
+                    File.Copy(FileList[Current_Picture], copytopanel + "\\" + Path.GetFileName(FileList[Current_Picture]), true);
+                    return new AppState
+                    {
+                        OperationStatus = 1,
+                        InformationPanelState = "Текущее изображение будет скопировано в целевую директорию"
+                    };
+                }
+            }
+            else
+            {
+                return new AppState
+                {
+                    OperationStatus = 0,
+                    InformationPanelState = "Одной из указанных папок не существует."
+                };
+            }
+        }
+
     }
 }

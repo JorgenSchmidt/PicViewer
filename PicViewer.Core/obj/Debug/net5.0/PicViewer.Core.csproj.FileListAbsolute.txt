@@ -1,6 +1,5 @@
 D:\ProgramData\Projects\PicViewer\PicViewer.Core\bin\Debug\net5.0\PicViewer.Core.deps.json
 D:\ProgramData\Projects\PicViewer\PicViewer.Core\bin\Debug\net5.0\PicViewer.Core.dll
-D:\ProgramData\Projects\PicViewer\PicViewer.Core\bin\Debug\net5.0\ref\PicViewer.Core.dll
 D:\ProgramData\Projects\PicViewer\PicViewer.Core\bin\Debug\net5.0\PicViewer.Core.pdb
 D:\ProgramData\Projects\PicViewer\PicViewer.Core\obj\Debug\net5.0\PicViewer.Core.csproj.AssemblyReference.cache
 D:\ProgramData\Projects\PicViewer\PicViewer.Core\obj\Debug\net5.0\PicViewer.Core.GeneratedMSBuildEditorConfig.editorconfig
@@ -10,3 +9,4 @@ D:\ProgramData\Projects\PicViewer\PicViewer.Core\obj\Debug\net5.0\PicViewer.Core
 D:\ProgramData\Projects\PicViewer\PicViewer.Core\obj\Debug\net5.0\PicViewer.Core.dll
 D:\ProgramData\Projects\PicViewer\PicViewer.Core\obj\Debug\net5.0\ref\PicViewer.Core.dll
 D:\ProgramData\Projects\PicViewer\PicViewer.Core\obj\Debug\net5.0\PicViewer.Core.pdb
+D:\ProgramData\Projects\PicViewer\PicViewer.Core\obj\Debug\net5.0\refint\PicViewer.Core.dll

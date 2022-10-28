@@ -2,6 +2,7 @@
 using PicViewer.Models;
 using PicViewer.Services;
 using System;
+using System.IO;
 
 namespace PicViewer
 {
@@ -12,6 +13,9 @@ namespace PicViewer
 
         // Info panel. Can into himself send message about error or action was successfully completed. Can be only read by user.
         public string infoPanel;
+        /// <summary>
+        /// Info panel. Can into himself send message about error or action was successfully completed. Can be only read by user.
+        /// </summary>
         public string InfoPanel
         {
             get { return infoPanel; }
@@ -24,6 +28,9 @@ namespace PicViewer
 
         // Textbox for specifying the directory from which to read the files
         public string copyfromPanel;
+        /// <summary>
+        /// Textbox for specifying the directory from which to read the files
+        /// </summary>
         public string CopyFromPanel
         {
             get { return copyfromPanel; }
@@ -36,6 +43,9 @@ namespace PicViewer
 
         // Textbox for specifying the directory from which to copy the files
         public string copytoPanel;
+        /// <summary>
+        /// Textbox for specifying the directory from which to copy the files
+        /// </summary>
         public string CopyToPanel
         {
             get { return copytoPanel; }
@@ -117,7 +127,8 @@ namespace PicViewer
                 (
                     (obj) =>
                     {
-
+                        AppState appobj = DirectoryDataModel.ToCopyFile(copyfromPanel, copytoPanel);
+                        InfoPanel = appobj.InformationPanelState;
                     }
                 );
             }
