@@ -155,5 +155,52 @@ namespace PicViewer.Models
             }
         }
 
+        public static AppState ToDeleteFile (string copyfromPanel)
+        {
+            if (FileList.Count <= 0)
+            {
+                return new AppState
+                {
+                    OperationStatus = 0,
+                    InformationPanelState = "Введите название папки."
+                };
+            }
+            else 
+            {
+                int mustDeletedFile = Current_Picture;
+                Current_Picture--;
+                
+                if (Current_Picture < 0 && FileList.Count - 1 == 0)
+                {
+                    File.Delete(FileList[mustDeletedFile]);
+                    return new AppState
+                    {
+                        OperationStatus = 0,
+                        InformationPanelState = "В папке не осталось файлов."
+                    };
+                }
+                else if (Current_Picture < 0)
+                {
+                    Current_Picture = FileList.Count - 2;
+                    Current_Path = FileList[Current_Picture];
+                }
+                else
+                {
+                    Current_Path = FileList[Current_Picture];
+                }
+
+                File.Delete(FileList[mustDeletedFile]);
+                FileList = DirectoryHelper.GetFilesFromDirectory(copyfromPanel, new string[] { "bmp", "jpeg", "jpg", "png" });
+
+                return new AppState
+                {
+                    OperationStatus = 1,
+                    InformationPanelState = "Текущее изображение будет удалено.",
+                    ElementCounterState = (Current_Picture + 1).ToString() + "/" + (FileList.Count).ToString(),
+                    ContentWindowState = new Uri(FileList[Current_Picture])
+                };
+            }
+        }
+
     }
 }

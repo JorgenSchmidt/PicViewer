@@ -142,7 +142,17 @@ namespace PicViewer
                 (
                     (obj) =>
                     {
-
+                        AppState appobj = DirectoryDataModel.ToDeleteFile(copyfromPanel);
+                        InfoPanel = appobj.InformationPanelState;
+                        if (appobj.OperationStatus == 1)
+                        {
+                            ElementCounter = appobj.ElementCounterState;
+                            WindowContent = appobj.ContentWindowState;
+                        }
+                        else
+                        {
+                            ElementCounter = "0/0";
+                        }
                     }
                 );
             }
